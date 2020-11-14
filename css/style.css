@@ -1,49 +1,312 @@
-body {
-  margin: auto;
-  max-width: 1210px;
-  background-color: white;
-  color: black;
-  display: flex;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.trump {
-  margin: auto auto 30px auto;
-}
-.trump_image {
-  width: 300px;
-  border: solid 2px darkslategrey;
-}
-h1 {
-  color: brown;
-}
-.h2 {
-  margin-top: 30px;
-  font-size: 20px;
-}
-h3 {
-  margin-left: 30px;
-}
-.list {
-  margin: 30px;
-}
-.list-element {
-  font-size: 18px;
-  margin: 10px;
-}
-.list-element-2 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
   list-style-type: none;
+  scroll-behavior: smooth;
 }
-.span {
-  color: darkred;
-}
-.span_text {
-  font-weight: bold;
-}
-.text {
-  max-width: 700px;
+body {
+  cursor: url("../img/icons/kolpak-pekarskiy.png"), auto;
+  font-family: "Myriad Pro Regular", "Open Sans", sans-serif;
+  margin: auto;
 }
 
-.photos {
-  max-width: 250px;
+.container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1258px;
+  margin: auto;
+}
+/* Header section*/
+.nav-bar {
+  display: flex;
+}
+.nav-bar_item {
+  margin-top: 30px;
+  margin: 29px 30px 29px 0;
+}
+a {
+  font-size: 15px;
+  color: #949494;
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-bar_link {
+  transition: border-bottom 0.4s;
+  border-bottom: 2px solid transparent;
+}
+.nav-bar_link:hover {
+  color: #b5904e;
+  border-bottom: 2px solid #b5904e;
+}
+
+.nav-bar_item:last-child {
+  padding-right: 0px;
+}
+.separator {
+  background-position: center center;
+  background-image: url(../img/separator.png);
+  width: 79px;
+  height: 55px;
+  position: relative;
+  margin: 0px auto;
+}
+
+.separator::before {
+  right: 70px;
+  top: 50%;
+}
+.separator::after {
+  left: 70px;
+  top: 50%;
+}
+.separator::before,
+.separator::after {
+  content: "";
+  width: 600px;
+  height: 2px;
+  background-color: #949494;
+  position: absolute;
+  opacity: 60%;
+}
+
+/*Main content*/
+.section-recipes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5b5b5b;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 20px auto 25px;
+  font-weight: 400;
+}
+
+.promo {
+  background: url(../img/img__1.jpg);
+  height: 470px;
+  width: 623px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 19px;
+  transition: 0.8s;
+}
+.promo:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.7);
+}
+.promo-2 {
+  background: url(../img/img__2.jpg);
+}
+
+#recipes {
+  margin-bottom: 80px;
+}
+.promo_text-title {
+  letter-spacing: 0.001em;
+  font-size: 41px;
+  margin: 12px 0px 57px 0px;
+  position: relative;
+}
+.title-2 {
+  max-width: 390px;
+}
+
+/* Рецепты*/
+
+.res_menu-item {
+  height: 41px;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  color: #5b5b5b;
+  width: 149px;
+}
+.res_menu-item:hover {
+  background-color: #2f3032;
+  transition: 0.4s;
+  color: #fff;
+}
+
+.res_menu-item:nth-child(2):hover .recipe-all {
+  transform: rotate(180deg);
+}
+.recipe-title {
+  font-size: 18pt;
+  font-weight: lighter;
+  width: 290px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  color: #3d3d3d;
+}
+.recipe-all {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+  transition: transform 1s;
+}
+.recipe {
+  display: flex;
+  width: 623px;
+  height: 308px;
+}
+
+.recipe-img {
+  width: 306px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.legs {
+  background-image: url(../img/dugs_legs.png);
+}
+.salad {
+  background-image: url(../img/salad.png);
+}
+.img-author {
+  margin-right: 7px;
+}
+.rec-author {
+  padding: 15px;
+  padding-bottom: 20px;
+  color: #bcbcbc;
+  display: flex;
+  align-items: flex-end;
+}
+.rec-text {
+  border-top: solid 2px #f3f3f3;
+  border-right: solid 2px #f3f3f3;
+  border-bottom: solid 2px #f3f3f3;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  width: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.soc-icons:not(:last-child) {
+  margin-right: 20px;
+}
+.soc-icons:last-child {
+  margin-right: 15px;
+}
+.recipe-list {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.recipe-list_item {
+  display: flex;
+  box-sizing: content-box;
+  font-size: 11pt;
+  border: solid 1px #e8e8e8;
+  border-radius: 12px;
+  color: #b5904e;
+  width: 83px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3px 4px;
+}
+.howdo {
+  margin-bottom: auto;
+  color: #5b5b5b;
+  padding: 0px 8px;
+}
+.soc-media {
+  border-top: solid 2px #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  height: 49px;
+}
+
+.like {
+  display: flex;
+  justify-content: space-between;
+  color: #5b5b5b;
+  opacity: 70%;
+  font-size: 15px;
+}
+.like-img {
+  margin-right: 10px;
+}
+
+/* Горячая подборка*/
+.last-child::before {
+  content: "#";
+}
+
+.recipe-compilation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  height: 490px;
+}
+.recipe-compilation_item {
+  position: relative;
+  transition: transform 0.6s, box-shadow 0.2s;
+}
+.recipe-compilation_item:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.compilation_img {
+  max-width: 100%;
+}
+.compilation_img-text {
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  width: 100%;
+  font-size: 26pt;
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+/* Footer*/
+
+.footer {
+  display: flex;
+  margin: 0 auto;
+  box-sizing: content-box;
+  background: #252627;
+  text-decoration: none;
+}
+
+.nav-footer {
+  padding-left: 55px;
 }

@@ -3,151 +3,625 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Резюме Дональд Трамп</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <title>Lesson-2 HW</title>
   </head>
+
   <body>
-    <head class="head">
-      <div class="trump_about">
-        <h1 class="trump">Дональд Трамп</h1>
-
-        <img
-          class="trump_image"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/800px-Donald_Trump_official_portrait.jpg"
-        />
-        <h3>45-й президент США</h3>
-        <img
-          src="https://imgc.allpostersimages.com/img/print/u-g-F8HGEK0.jpg?w=308&h=450"
-          alt=""
-          class="maga"
-        />
-      </div>
-    </head>
-    <main class="main">
-      <ul class="list">
-        <li class="list-element-2">
-          День рождения: <span class="span_text">14 июня 1946 (74 года)</span>
-        </li>
-        <li class="list-element-2">
-          Место рождения: <span class="span_text">г. Нью-Йорк, США</span>
-        </li>
-        <li class="list-element-2">
-          Рост: <span class="span_text">191 см </span>
-        </li>
-        <li class="list-element-2">
-          Вес: <span class="span_text">100 кг</span>
-        </li>
-      </ul>
-      <ul class="list">
-        <h2 class="h2">Образование</h2>
-        <li class="list-element">
-          Школа уортон Пенсильванского универстита
-          <span class="span"> <br />1962-1966 </span>
-        </li>
-        <li class="list-element">
-          Фордгамский университет
-          <span class="span"> <br />1966-1968 </span>
-        </li>
-      </ul>
-      <ul class="list">
-        <h2 class="h2">Предыдущий опыт</h2>
-        <li>
-          Swifton Village (1968)
-
-          <p class="text">
-            Первым проектом стал грандиозный жилой комплекс Swifton Village в
-            штате Огайо, рассчитанный на 1200 квартир для «среднего класса». Под
-            руководством младшего Трампа компания сумела закончить проект в
-            течение года, затратив на постройку $6 миллионов и выручив с продажи
-            апартаментов $12 миллионов.
-          </p>
-        </li>
-        <li>
-          Commodore отель (1974)
-          <p class="text">
-            В 1974 году Трамп, не без помощи новых связей, выиграл тендер на
-            восстановление полуразрушенного отеля Commodore. Так как многие
-            здания около гостиницы тоже находились в плачевном состоянии и
-            нуждались в финансовом вливании, как, впрочем, и сам город,
-            пребывавший на грани банкротства, Дональд сумел добиться от мэрии
-            налоговых льгот сроком на 40 лет. Более того, крупнейшие банки
-            Нью-Йорка выделили ему ипотечный кредит общей суммой $70 миллионов.
-            Условие стояло одно – Трамп должен был привести район в порядок.
-          </p>
-        </li>
-        <li>
-          Trump Tower
-          <p class="text">
-            В 1979 году Дональд положил глаз на участок земли на 5-ой авеню,
-            напротив ювелирного магазина Tiffany&Co. Когда бизнесмена спросили,
-            что заставило выкупить его именно это место, он ответил: «У
-            магазинов Тиффани всегда крутятся самые обеспеченные люди
-            Нью-Йорка». К 1983 году на этом участке вырос 58-этажный небоскреб
-            Trump Tower, высотой превзошедший все городские здания.
-          </p>
-        </li>
-
-        <li>
-          Политическая карьера
-          <p>
-            16 июня 2015 года сообщил о готовности сразиться за президентское
-            кресло. Президентская кампания Трампа была строго продумана: первым
-            делом он посетил штат Нью-Гэмпшир, традиционно считающийся оплотом
-            республиканцев, затем совершил тур по Неваде и Калифорнии – штатам,
-            ранее получившим солидное финансовое вливание со стороны Дональда.
-            Также Трамп неоднократно проводил митинги в свою поддержку для
-            развлечения электората. Далее:
-            https://uznayvse.ru/znamenitosti/biografiya-donald-tramp.html
-          </p>
-        </li>
-      </ul>
-
-      <section>
-        <h3 class="h3">Навыки</h3>
-        <p>
-          Обладает навыками предпринимательськой деятельности, руководства
-          большой группой людей, ведение бизнеса в сфере постройки, управления,
-          аренды недвижимости. Навыки ведения дипломатических переговоров на
-          уровне независимых государств.
-        </p>
+    <!-- Верхняя часть-->
+    <header>
+      <section class="container">
+        <nav>
+          <ul class="nav-bar">
+            <li class="nav-bar_item">
+              <a class="nav-bar_link" href="#sel-rec">Подбор рецептов</a>
+            </li>
+            <li class="nav-bar_item">
+              <a class="nav-bar_link" href="#recipes">Рецепты</a>
+            </li>
+            <li class="nav-bar_item">
+              <a class="nav-bar_link" href="#hot_rec">Горячие рецепты</a>
+            </li>
+          </ul>
+        </nav>
       </section>
-      <section>
-        <h2>Фотогалерея</h2>
-        <img
-          src="https://uznayvse.ru/images/content/2019/12/uzn_15759718580.jpg"
-          alt=""
-          class="photos"
-        />
-        <img
-          src="https://uznayvse.ru/images/content/2017/1/uzn_14854381257.jpg"
-          alt=""
-          class="photos"
-        />
-        <img
-          src="https://uznayvse.ru/images/stories2016/uzn_1459174820.jpg"
-          alt=""
-          class="photos"
-        />
-        <img
-          src="https://uznayvse.ru/images/stories2016/uzn_1459174945.jpg"
-          alt=""
-          class="photos"
-        />
-        <img
-          src="https://uznayvse.ru/images/stories2016/uzn_1459175154.jpg"
-          alt=""
-          class="photos"
-        />
-        <img
-          src="https://uznayvse.ru/images/stories2016/uzn_1459173979.jpg"
-          alt=""
-          class="photos"
-        />
+
+      <div class="separator"></div>
+    </header>
+
+    <!-- Центральная часть-->
+    <main>
+      <section class="container">
+        <h2 id="sel-rec" class="section-title">подбор рецептов</h2>
+        <section class="section-recipes">
+          <!--Первое промо-->
+          <div class="promo promo-1">
+            <div class="promo_text">
+              <p>Блюдо дня</p>
+              <p class="promo_text-title">Куриные ножки на гриле</p>
+              <img src="./img/img__icons.png" />
+            </div>
+          </div>
+
+          <!--Второе прмомо-->
+
+          <div class="promo promo-2">
+            <div class="promo_text">
+              <p>лучшие рецепты недели</p>
+              <p class="promo_text-title title-2">7 лучших рецептов недели</p>
+              <img src="./img/img__icons.png" />
+            </div>
+          </div>
+        </section>
+        <div class="separator"></div>
+
+        <!--Рецепты-->
+
+        <section class="recipes-choise">
+          <h2 id="recipes" class="section-title">рецепты</h2>
+          <!--Селектор категории-->
+
+          <div class="box-parent">
+            <!--Первый рецепт-->
+            <div class="recipe">
+              <div class="recipe-img legs">
+                <div class="rec-author">
+                  <img
+                    class="img-author"
+                    src="./img/icons/Эллипс 1.png"
+                    alt=""
+                  />
+                  <p>Daria Fedorenko</p>
+                </div>
+              </div>
+
+              <div class="rec-text">
+                <h3 class="recipe-title">
+                  Утиные ножки с овощами и <br />
+                  грудинкой <br />
+                  фасолью
+                </h3>
+                <div class="recipe-list">
+                  <div class="recipe-list_item">
+                    <img src="img/icons/time.png" alt="time" srcset="" />
+                    <p>135 мин</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img
+                      class="icons"
+                      src="img/icons/hard.png"
+                      alt="hard"
+                      srcset=""
+                    />
+                    <p>Сложно</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img src="img/icons/kaloriy 3.png" alt="ccal" srcset="" />
+                    <p>125 ккал</p>
+                  </div>
+                </div>
+                <p class="howdo">
+                  говядина, морковь, масло топлёное, лук репчатый, морковь,
+                  редька, перец сладкий, помидоры, томат-пюре, картофель,
+                  чеснок, бульон мясной, соль, перец черный, зелень петрушки...
+                </p>
+                <div class="soc-media">
+                  <div class="like">
+                    <img
+                      class="like-img"
+                      src="img/socials/like.png"
+                      alt="like"
+                    />
+                    <p>16</p>
+                  </div>
+                  <div>
+                    <a
+                      class="soc-icons"
+                      href="https://www.vk.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/vk.png" alt="" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.facebook.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/facebook.png" alt="fb" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.odnoklassniki.com"
+                      class="soc-link"
+                    >
+                      <img
+                        src="img/socials/odnoklassniki.png"
+                        alt="odnoklassniki"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="recipe">
+              <div class="recipe-img legs">
+                <div class="rec-author">
+                  <img
+                    class="img-author"
+                    src="./img/icons/Эллипс 1.png"
+                    alt=""
+                  />
+                  <p>Daria Fedorenko</p>
+                </div>
+              </div>
+
+              <div class="rec-text">
+                <h3 class="recipe-title">
+                  Утиные ножки с овощами и <br />
+                  грудинкой <br />
+                  фасолью
+                </h3>
+                <div class="recipe-list">
+                  <div class="recipe-list_item">
+                    <img src="img/icons/time.png" alt="time" srcset="" />
+                    <p>135 мин</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img
+                      class="icons"
+                      src="img/icons/hard.png"
+                      alt="hard"
+                      srcset=""
+                    />
+                    <p>Сложно</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img src="img/icons/kaloriy 3.png" alt="ccal" srcset="" />
+                    <p>125 ккал</p>
+                  </div>
+                </div>
+                <p class="howdo">
+                  говядина, морковь, масло топлёное, лук репчатый, морковь,
+                  редька, перец сладкий, помидоры, томат-пюре, картофель,
+                  чеснок, бульон мясной, соль, перец черный, зелень петрушки...
+                </p>
+                <div class="soc-media">
+                  <div class="like">
+                    <img
+                      class="like-img"
+                      src="img/socials/like.png"
+                      alt="like"
+                    />
+                    <p>16</p>
+                  </div>
+                  <div>
+                    <a
+                      class="soc-icons"
+                      href="https://www.vk.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/vk.png" alt="" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.facebook.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/facebook.png" alt="fb" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.odnoklassniki.com"
+                      class="soc-link"
+                    >
+                      <img
+                        src="img/socials/odnoklassniki.png"
+                        alt="odnoklassniki"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="recipe">
+              <div class="recipe-img salad">
+                <div class="rec-author">
+                  <img
+                    class="img-author"
+                    src="./img/icons/Эллипс 1.png"
+                    alt=""
+                  />
+                  <p>Hristin Fedorenko</p>
+                </div>
+              </div>
+
+              <div class="rec-text">
+                <h3 class="recipe-title">
+                  Салат из свеклы с козьим сыром и медовой заправкой
+                </h3>
+                <div class="recipe-list">
+                  <div class="recipe-list_item">
+                    <img src="img/icons/time.png" alt="time" srcset="" />
+                    <p>35 мин</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img
+                      class="icons"
+                      src="img/icons/hard.png"
+                      alt="hard"
+                      srcset=""
+                    />
+                    <p>Cложно</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img src="img/icons/kaloriy 3.png" alt="ccal" srcset="" />
+                    <p>125 ккал</p>
+                  </div>
+                </div>
+                <p class="howdo">
+                  говядина, масло топлёное, лук репчатый, морковь, редька, перец
+                  сладкий, помидоры, томат-пюре, картофель...
+                </p>
+                <div class="soc-media">
+                  <div class="like">
+                    <img
+                      class="like-img"
+                      src="img/socials/like.png"
+                      alt="like"
+                    />
+                    <p>16</p>
+                  </div>
+                  <div>
+                    <a
+                      class="soc-icons"
+                      href="https://www.vk.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/vk.png" alt="" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.facebook.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/facebook.png" alt="fb" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.odnoklassniki.com"
+                      class="soc-link"
+                    >
+                      <img
+                        src="img/socials/odnoklassniki.png"
+                        alt="odnoklassniki"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe">
+              <div class="recipe-img legs">
+                <div class="rec-author">
+                  <img
+                    class="img-author"
+                    src="./img/icons/Эллипс 1.png"
+                    alt=""
+                  />
+                  <p>Daria Fedorenko</p>
+                </div>
+              </div>
+
+              <div class="rec-text">
+                <h3 class="recipe-title">
+                  Утиные ножки с овощами и <br />
+                  грудинкой <br />
+                  фасолью
+                </h3>
+                <div class="recipe-list">
+                  <div class="recipe-list_item">
+                    <img src="img/icons/time.png" alt="time" srcset="" />
+                    <p>135 мин</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img
+                      class="icons"
+                      src="img/icons/hard.png"
+                      alt="hard"
+                      srcset=""
+                    />
+                    <p>Сложно</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img src="img/icons/kaloriy 3.png" alt="ccal" srcset="" />
+                    <p>125 ккал</p>
+                  </div>
+                </div>
+                <p class="howdo">
+                  говядина, морковь, масло топлёное, лук репчатый, морковь,
+                  редька, перец сладкий, помидоры, томат-пюре, картофель,
+                  чеснок, бульон мясной, соль, перец черный, зелень петрушки...
+                </p>
+                <div class="soc-media">
+                  <div class="like">
+                    <img
+                      class="like-img"
+                      src="img/socials/like.png"
+                      alt="like"
+                    />
+                    <p>16</p>
+                  </div>
+                  <div>
+                    <a
+                      class="soc-icons"
+                      href="https://www.vk.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/vk.png" alt="" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.facebook.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/facebook.png" alt="fb" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.odnoklassniki.com"
+                      class="soc-link"
+                    >
+                      <img
+                        src="img/socials/odnoklassniki.png"
+                        alt="odnoklassniki"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="recipe">
+              <div class="recipe-img legs">
+                <div class="rec-author">
+                  <img
+                    class="img-author"
+                    src="./img/icons/Эллипс 1.png"
+                    alt=""
+                  />
+                  <p>Daria Fedorenko</p>
+                </div>
+              </div>
+
+              <div class="rec-text">
+                <h3 class="recipe-title">
+                  Утиные ножки с овощами и <br />
+                  грудинкой <br />
+                  фасолью
+                </h3>
+                <div class="recipe-list">
+                  <div class="recipe-list_item">
+                    <img src="img/icons/time.png" alt="time" srcset="" />
+                    <p>135 мин</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img
+                      class="icons"
+                      src="img/icons/hard.png"
+                      alt="hard"
+                      srcset=""
+                    />
+                    <p>Сложно</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img src="img/icons/kaloriy 3.png" alt="ccal" srcset="" />
+                    <p>125 ккал</p>
+                  </div>
+                </div>
+                <p class="howdo">
+                  говядина, морковь, масло топлёное, лук репчатый, морковь,
+                  редька, перец сладкий, помидоры, томат-пюре, картофель,
+                  чеснок, бульон мясной, соль, перец черный, зелень петрушки...
+                </p>
+                <div class="soc-media">
+                  <div class="like">
+                    <img
+                      class="like-img"
+                      src="img/socials/like.png"
+                      alt="like"
+                    />
+                    <p>16</p>
+                  </div>
+                  <div>
+                    <a
+                      class="soc-icons"
+                      href="https://www.vk.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/vk.png" alt="" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.facebook.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/facebook.png" alt="fb" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.odnoklassniki.com"
+                      class="soc-link"
+                    >
+                      <img
+                        src="img/socials/odnoklassniki.png"
+                        alt="odnoklassniki"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe">
+              <div class="recipe-img legs">
+                <div class="rec-author">
+                  <img
+                    class="img-author"
+                    src="./img/icons/Эллипс 1.png"
+                    alt=""
+                  />
+                  <p>Daria Fedorenko</p>
+                </div>
+              </div>
+
+              <div class="rec-text">
+                <h3 class="recipe-title">
+                  Утиные ножки с овощами и <br />
+                  грудинкой <br />
+                  фасолью
+                </h3>
+                <div class="recipe-list">
+                  <div class="recipe-list_item">
+                    <img src="img/icons/time.png" alt="time" srcset="" />
+                    <p>135 мин</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img
+                      class="icons"
+                      src="img/icons/hard.png"
+                      alt="hard"
+                      srcset=""
+                    />
+                    <p>Сложно</p>
+                  </div>
+                  <div class="recipe-list_item">
+                    <img src="img/icons/kaloriy 3.png" alt="ccal" srcset="" />
+                    <p>125 ккал</p>
+                  </div>
+                </div>
+                <p class="howdo">
+                  говядина, морковь, масло топлёное, лук репчатый, морковь,
+                  редька, перец сладкий, помидоры, томат-пюре, картофель,
+                  чеснок, бульон мясной, соль, перец черный, зелень петрушки...
+                </p>
+                <div class="soc-media">
+                  <div class="like">
+                    <img
+                      class="like-img"
+                      src="img/socials/like.png"
+                      alt="like"
+                    />
+                    <p>16</p>
+                  </div>
+                  <div>
+                    <a
+                      class="soc-icons"
+                      href="https://www.vk.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/vk.png" alt="" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.facebook.com"
+                      class="soc-link"
+                    >
+                      <img src="img/socials/facebook.png" alt="fb" />
+                    </a>
+                    <a
+                      class="soc-icons"
+                      href="https://www.odnoklassniki.com"
+                      class="soc-link"
+                    >
+                      <img
+                        src="img/socials/odnoklassniki.png"
+                        alt="odnoklassniki"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="separator"></div>
+        <section class="hot compilation">
+          <h2 id="hot_rec" class="section-title last-child">
+            горячая подборка
+          </h2>
+          <div class="recipe-compilation">
+            <div class="recipe-compilation_item">
+              <img
+                class="compilation_img"
+                src="./img/compilation/img_one.png"
+                alt=""
+                srcset=""
+              />
+              <p class="compilation_img-text">
+                Утренние <br />
+                рецепты
+              </p>
+            </div>
+            <div class="recipe-compilation_item">
+              <img
+                class="compilation_img"
+                src="./img/compilation/img_2.png"
+                alt=""
+                srcset=""
+              />
+              <p class="compilation_img-text">Масленица</p>
+            </div>
+            <div class="recipe-compilation_item">
+              <img
+                class="compilation_img"
+                src="./img/compilation/4 копия 16.png"
+                alt=""
+                srcset=""
+              />
+              <p class="compilation_img-text">
+                Рецепты <br />
+                для <br />
+                детей
+              </p>
+            </div>
+            <div class="recipe-compilation_item">
+              <img
+                class="compilation_img"
+                src="./img/compilation/4 копия 15.png"
+                alt=""
+                srcset=""
+              />
+              <p class="compilation_img-text">Здоровое питание</p>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <section class="container">
+        <ul class="nav-bar">
+          <li class="nav-bar_item">
+            <a class="nav-bar_link" href="#sel-rec">Подбор рецептов</a>
+          </li>
+          <li class="nav-bar_item">
+            <a class="nav-bar_link" href="#recipes">Рецепты</a>
+          </li>
+          <li class="nav-bar_item">
+            <a class="nav-bar_link" href="#hot_rec">Горячие рецепты</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
