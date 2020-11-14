@@ -188,6 +188,17 @@ a {
 .salad {
   background-image: url(../img/salad.png);
 }
+.dessert {
+  background-image: url(../img/traditional-dessert-sliced-poached-pears-in-white-wine-served-in-black-plate-with-syrup-ice-cream-lemon-zest-and-glass-of-.jpg);
+}
+.wine {
+  background-image: url(../img/1000-1309d453a15ee7427c6199098058a983.jpg);
+  background-position: bottom;
+}
+.fish {
+  background-image: url(../img/b7faeea11645e01b8.jpg);
+  background-position: bottom;
+}
 .img-author {
   margin-right: 7px;
 }
